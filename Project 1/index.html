@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+    <section class="home-page">
+        <header>
+            <a id=leaderboard>View Highscores <i class="fas fa-hand-point-left fa-lg"></i></a> 
+
+            <p>Time: <span class="timer"></span></p>
+        </header>
+        <main>
+        
+        <section class="start sec">
+            <div class="start-container container">
+                    <h1 class="heading">Coding Quiz Challenge</h1>
+
+                    <p class="title-info">
+                        Try to answer to following code-related questions within the time limit.
+                    </p>
+
+                    <p class="title-info">
+                        Keep in mind that incorrect answer will penalize your score/time by ten seconds!
+                    </p>
+                    <div class="btn-container ">
+                        <button id="start-btn">
+                            Start Quiz
+                        </button>
+                    </div>
+            </div>
+        </section>
+        
+        
+        <section class="high-score sec not-active">
+            <div class="high-score-container container">
+                <h1 class="heading">Highscores</h1>
+
+                <div class="high-scores-display">
+                   
+                </div>
+
+                <div class="btn-container">
+                    <button id="goback-btn">
+                        Go Back
+                    </button>
+
+                    <button id="clear-highscore-btn">
+                        Clear Highscores
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <div class="quiz sec not-active">
+            <div class="question-container container">
+                <div class="ques">
+
+                </div>
+
+                <div class="result">
+                    <p id="alert"></p>
+                </div>
+            </div>
+          
+        </div>
+
+
+        <section class="all-done sec not-active">
+            <div class="all-done-container container">
+                <h1 class="heading">All Done!</h1>
+                <p>Your final score is <span class="score">8</span>.</p>
+                <div class="initial-container">
+                    <label for="initial-name">Enter Initials:</label>
+                    <input type="text" name="initial-name" id="initial-name-tf">
+                    <button id="submit-btn">
+                        Submit
+                    </button>
+                </div>
+            </div>
+
+            
+        </section>
+
+
+        </main>
+  </section>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

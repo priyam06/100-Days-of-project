@@ -1,0 +1,146 @@
+:root{
+    --bg-color-one : #218380;
+    --bg-color-two : #ffffff;
+    --font-color-one : #000;
+    --font-color-two : #fff;
+}
+
+@font-face {
+    font-family: fa-solid;
+    src: url(./fonts/fa-solid-900.woff2);
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home-page{
+    height: 100vh;
+}
+
+
+a{
+    cursor: pointer;
+}
+
+
+header{
+    background-color: var(--bg-color-one);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    color: var(--font-color-two);
+}
+
+.sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    
+}
+
+
+
+.container{
+    border: 1px solid var(--bg-color-one);
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(204,198,204,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(204,198,204,1);
+    box-shadow: 10px 10px 5px 0px rgba(204,198,204,1);
+    border-radius: 30px;
+    
+}
+
+.heading{
+    font-size: 24px;
+}
+
+.start-container > p{
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.btn-container{
+    margin-top: 20px;
+}
+
+
+button {
+    background-color: var(--bg-color-one);
+    border: none;
+    color: var(--font-color-two);
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* High score container */
+
+
+.high-score-container{
+    width: 32vh;
+}
+
+.not-active{
+    display: none;
+}
+
+
+/* quiz section */
+
+.question-container{
+    width: 90vh;
+    gap: 20px;
+}
+
+
+.option-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option{
+    background-color: var(--bg-color-one);
+    border-radius: 10px;
+    padding-left: 18px;
+    color: var(--font-color-two);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.option:hover{
+    opacity: 0.8;
+}
+
+#initial-name-tf{
+    padding: 9px 0px;
+}
+
+.all-done-container{
+    width: 60vh;
+}
+
+@media all and (max-width: 480px) { 
+
+  .start{
+      padding: 0 10px;
+  }
+
+  .start-container{
+      padding: 10px;
+  }
+
+  .btn-container{
+    margin-bottom: 20px;
+}
+}
